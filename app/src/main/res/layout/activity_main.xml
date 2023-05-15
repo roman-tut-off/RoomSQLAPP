@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Data_TV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Данные"
+        app:layout_constraintBottom_toTopOf="@+id/Name_PT"
+        app:layout_constraintEnd_toEndOf="@+id/Name_PT"
+        app:layout_constraintStart_toStartOf="@+id/Name_PT"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Save_BTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Price_PT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="Стоимость"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Save_BTN"
+        app:layout_constraintEnd_toEndOf="@+id/Save_BTN"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/Save_BTN" />
+
+    <EditText
+        android:id="@+id/Name_PT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="Наименование"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Price_PT"
+        app:layout_constraintEnd_toEndOf="@+id/Price_PT"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/Price_PT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
